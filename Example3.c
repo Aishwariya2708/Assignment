@@ -1,20 +1,26 @@
-// 3. Program to print 5 to 1 numbers on screen 
+//3.Accept on number from user if number is less than 10 then print "Hello" otherwise"  print "Demo"
 
 #include<stdio.h>
-void Display()
+
+void Display (int iNo)
 {
-   // int i=0;
-     int i=5;
-    while(i>=1)
+    if(iNo<=10)
     {
-        printf("%d\n",i);
-        i--;
+        printf("Hello");
+
+    }
+    else
+    {
+        printf("Demo");
     }
 }
+int main()
+{
 
-    int main()
-    {
-        Display();
-        return 0;
+    int iValue=0;
+    printf("Enter number:\n");
+    scanf("%d",&iValue);
+    Display(iValue);
 
-    }
+    return 0;
+}
