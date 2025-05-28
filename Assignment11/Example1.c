@@ -6,7 +6,7 @@ void Pattern(int iNo)
     int iCnt=0;
  char ch = 'A';
  
-    for(int iCnt = 1; iCnt <=iNo; iCnt++)
+    for(iCnt = 1; iCnt <=iNo; iCnt++)
     {
         printf("%c",ch);
         ch++;
